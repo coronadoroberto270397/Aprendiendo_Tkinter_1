@@ -11,4 +11,15 @@ def saludo():
 boton1=tkinter.Button(ventana,text="Click aqui", command = saludo)
 boton1.pack()
 
+ct = tkinter.Entry(ventana, font = "Helvetica 50")
+ct.pack()
+
+def texto():
+    txd=ct.get()
+    print (txd)
+    etiqueta["text"] = txd
+boton2=tkinter.Button(ventana,text="Click aqui", command = texto)
+boton2.pack()
+
+
 ventana.mainloop()
