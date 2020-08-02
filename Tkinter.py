@@ -21,5 +21,7 @@ def texto():
 boton2=tkinter.Button(ventana,text="Click aqui", command = texto)
 boton2.pack()
 
+boton3 = tkinter.Button(ventana, text = "info", width = 10, height = 10)
+boton3.pack(side = tkinter.BOTTOM)
 
 ventana.mainloop()
